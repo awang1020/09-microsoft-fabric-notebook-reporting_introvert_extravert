@@ -8,7 +8,7 @@ Analyser des comportements comme le temps passé seul, la fréquence de publicat
 
 ## 🧱 Contenu du repo
 
-📁 data/ : jeu de données brut (.csv ou exporté depuis Fabric)
+📁 data/ : jeu de données brut (.csv ou exporté depuis Fabric) récupéré à partir de Kaggle
 📁 notebooks/ : notebook Microsoft Fabric utilisé pour nettoyer/analyser les données
 📁 powerbi/ : fichier Power BI (.pbix) contenant les visuels et KPIs
 📁 measures/ : mesures DAX utilisées dans le rapport
