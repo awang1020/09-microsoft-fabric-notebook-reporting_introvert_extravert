@@ -6,6 +6,12 @@ Ce projet explore et visualise les traits de personnalité à partir d’un jeu 
 
 Analyser des comportements comme le temps passé seul, la fréquence de publication, ou la participation sociale, et les relier aux prédictions de personnalité (introverti ou extraverti).
 
+## 📊 Aperçu du Dashboard Power BI
+
+Voici un aperçu du tableau de bord interactif construit dans Power BI :
+
+![Power BI Dashboard](visuals/powerbi_dashboard.png)
+
 ## 🧱 Contenu du repo
 
 📁 data/ : jeu de données brut (.csv ou exporté depuis Fabric) récupéré à partir de Kaggle  
