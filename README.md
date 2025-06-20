@@ -13,6 +13,25 @@ Analyser des comportements comme le temps passé seul, la fréquence de publicat
 📁 powerbi/ : fichier Power BI (.pbix) contenant les visuels et KPIs  
 📄 README.md : ce fichier  
 
+
+## 🏗️ Prérequis
+
+Pour reproduire ce projet dans votre environnement Microsoft Fabric, vous devez :
+
+1. **Créer un Lakehouse dans Microsoft Fabric**
+   - Ce Lakehouse stockera les données sources sous forme de fichiers Delta (ou CSV).
+   - Le fichier `personality_dataset_predictions.csv` peut être importé dans la table `personality_dataset_predictions`.
+
+2. **Créer un Notebook Spark**
+   - Utilisez le notebook fourni dans `/notebooks/analysis_introvert_extravert.ipynb`
+   - Vous pouvez y préparer les données, enrichir les colonnes, ou lancer un traitement statistique.
+
+3. **Connecter Power BI au Lakehouse**
+   - Utilisez DirectLake ou Import pour analyser les données depuis le Lakehouse.
+   - Le rapport Power BI utilise des **mesures DAX** dynamiques et plusieurs **slicers visuels**.
+
+
+
 ## ⚙️ Technologies
 
 - Microsoft Fabric (Notebook Spark + Lakehouse)
