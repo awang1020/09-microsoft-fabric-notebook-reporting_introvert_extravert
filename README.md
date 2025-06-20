@@ -20,11 +20,13 @@ Pour reproduire ce projet dans votre environnement Microsoft Fabric, vous devez 
 
 1. **Créer un Lakehouse dans Microsoft Fabric**
    - Ce Lakehouse stockera les données sources sous forme de fichiers Delta (ou CSV).
-   - Le fichier `personality_dataset_predictions.csv` peut être importé dans la table `personality_dataset_predictions`.
+   - Le fichier `personality_dataset.csv` peut être importé dans la partie Files.
 
 2. **Créer un Notebook Spark**
-   - Utilisez le notebook fourni dans `/notebooks/analysis_introvert_extravert.ipynb`
+   - Utilisez le notebook fourni dans pour récupérer les données du lakehouse `/notebooks/analysis_introvert_extravert.ipynb`
    - Vous pouvez y préparer les données, enrichir les colonnes, ou lancer un traitement statistique.
+   - Utiliser le module d'AutoML (FlaML) intégré à Fabric pour créer un modèle de ML.
+   - Stocker les résultats dans un lakehouse `personality_dataset_predictions.csv`.
 
 3. **Connecter Power BI au Lakehouse**
    - Utilisez DirectLake ou Import pour analyser les données depuis le Lakehouse.
